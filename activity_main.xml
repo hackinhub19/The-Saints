@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.easyanatomy.MainActivity"
+    android:orientation="horizontal"
+ >
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scaleType="centerCrop"
+       android:src="@drawable/muscle"/>
+   <TextView
+       android:id="@+id/text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="36dp"
+       android:layout_marginLeft="26dp"
+       android:textColor="@android:color/white"
+       android:padding="17dp"
+       android:text="easy anatomy"
+       android:textAllCaps="true"
+       android:textStyle="bold"
+       />
+
+   <Button
+       android:id="@+id/skull"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="skull structure"
+       android:textAllCaps="true"
+       android:padding="17dp"
+       android:layout_margin="20dp"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentRight="true"
+       android:onClick="skull"
+       android:layout_below="@id/text" />
+
+   <Button
+       android:id="@+id/muscle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="muscle structure"
+       android:padding="17dp"
+       android:layout_margin="20dp"
+
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentRight="true"
+       android:textAllCaps="true"
+       android:layout_gravity="center"
+       android:onClick="muscle"
+       android:layout_below="@id/skull" />
+
+   <Button
+       android:id="@+id/nurve"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:padding="17dp"
+       android:layout_margin="20dp"
+
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentRight="true"
+       android:text="nurve structure"
+       android:textAllCaps="true"
+       android:layout_gravity="center"
+       android:onClick="nurvey"
+       android:layout_below="@id/muscle" />
+
+
+
+</RelativeLayout>
